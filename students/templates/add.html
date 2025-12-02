@@ -1,0 +1,8 @@
+<h2>Add Student</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add</button>
+</form>
+
+<a href="/view/">View Students</a>
